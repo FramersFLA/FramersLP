@@ -3,72 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FAQ - FLP</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Framers Linguistic Protocol | FAQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1a1a1a;
+      color: #f5f5dc;
+    }
+
+    header {
+      background-color: #121212;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav a {
+      color: #f5f5dc;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      color: #e0d6b9;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      background-color: #121212;
+      color: #f5f5dc;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <header class="bg-[#1f1f1f] border-b border-[#bfa97a] sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-white">FLP</h1>
-      <nav class="space-x-6">
-        <a href="index.html" class="text-white hover:text-[#bfa97a]">Home</a>
-        <a href="about.html" class="text-white hover:text-[#bfa97a]">About</a>
-        <a href="faq.html" class="text-white hover:text-[#bfa97a]">FAQ</a>
-        <a href="protocol.html" class="text-white hover:text-[#bfa97a]">Protocol</a>
-      </nav>
-    </div>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-6 text-[#bfa97a]">Frequently Asked Questions</h2>
-    <div class="space-y-8">
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">What is FLP?</h3>
-    <p class="text-white">The Framers Linguistic Protocol is a platform for legal language clarity and conformity across U.S. states, built on open-source values and blockchain protocols.</p>
-  </div>
-  
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">What is the purpose of the project?</h3>
-    <p class="text-white">To eliminate vague and deceptive legal terminology and enforce constitutional compliance through standardized templates and community participation.</p>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <h2>What is the Framers Linguistic Protocol?</h2>
+      <p>The FLP is a legal and digital framework aimed at restoring clarity and constitutional intent to legal systems using modern open-source tools.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Why is legal clarity so important?</h2>
+      <p>Clarity ensures that citizens can understand, follow, and challenge laws fairly. Vague language opens doors to abuse or exploitation.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>What does FLP stand for?</h2>
+      <p>Framers Linguistic Protocol. It represents a return to clear, constitutional language in lawmaking and legal interpretation.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Is FLP a political movement?</h2>
+      <p>FLP is not tied to any party. It’s for citizens who value transparency, legal precision, and individual liberty.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>How can I get involved?</h2>
+      <p>Follow us on social media, join the conversation, contribute to our open-source codebase, and spread awareness.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>How does FLP relate to AI?</h2>
+      <p>FLP supports using AI to detect and correct ambiguous or exploitative legal language, ensuring justice aligns with original intent.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Is there a cryptocurrency involved?</h2>
+      <p>Yes, our protocol is tied to a token system (ticker FRA) to provide incentives for participation and governance transparency.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Can I submit questions?</h2>
+      <p>Absolutely! Submit questions via the contact page or through our social platforms — a submission box will be added soon.</p>
+    </div>
   </div>
 
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">Is FLP a political movement?</h3>
-    <p class="text-white">FLP is a non-partisan legal framework project intended to empower all Americans, regardless of ideology, through transparency and lawful reform.</p>
-  </div>
-
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">Will this impact state sovereignty?</h3>
-    <p class="text-white">It reinforces federal supremacy while helping states align with constitutional principles using a voluntary legal protocol framework.</p>
-  </div>
-
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">How does blockchain fit into FLP?</h3>
-    <p class="text-white">We use blockchain tools like Ocean Protocol to tokenize access to legal datasets, track versioning, and restrict rogue or abusive AI access.</p>
-  </div>
-
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">Who can participate?</h3>
-    <p class="text-white">Developers, constitutionalists, attorneys, coders, and concerned citizens. It's fully open-source and structured to encourage distributed input.</p>
-  </div>
-
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">Can I suggest legal language for reform?</h3>
-    <p class="text-white">Yes. We welcome user-submitted interpretations, revisions, or breakdowns of complex statutes that can be peer-reviewed and integrated into state-specific templates.</p>
-  </div>
-
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">Will there be a native token?</h3>
-    <p class="text-white">Yes. The FRA ("Framers") token will be used to govern access to data, reward contributors, and ensure participation in protocol decisions.</p>
-  </div>
-
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">How does this help stop rogue AI?</h3>
-    <p class="text-white">By requiring AI models to "pay-to-query" or authenticate via compute-to-data mechanisms, it limits unchecked scraping and manipulation of law-based information.</p>
-  </div>
-
-  <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
-    <h3 class="text-xl font-semibold text-white">How can I get involved right now?</h3>
-    <p class="text-white">Follow us on Twitter @FoundersFLA, contribute on GitHub, or submit questions via the form below. Crowdfunding and community forums will launch soon.</p>
-  </div>
-</div>
+  <footer>
+    &copy; 2025 Framers Linguistic Protocol. All rights reserved.
+  </footer>
+</body>
+</html>
