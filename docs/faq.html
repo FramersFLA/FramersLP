@@ -4,50 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FAQ - Framers Linguistic Protocol</title>
-  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="style.css" />
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #002855;
+      color: #ffffff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+
     .accordion {
       cursor: pointer;
       padding: 1em;
       width: 100%;
-      border: none;
       text-align: left;
+      border: none;
       outline: none;
-      transition: 0.3s;
-      background-color: #f1f1f1;
+      background-color: #ddd;
+      font-size: 1em;
+      font-weight: bold;
       margin: 0.5em 0;
+      transition: background-color 0.3s;
     }
 
-    .active, .accordion:hover {
-      background-color: #ccc;
+    .accordion:hover,
+    .active {
+      background-color: #bbb;
     }
 
     .panel {
       padding: 0 1em;
       display: none;
-      background-color: white;
-      overflow: hidden;
+      background-color: #fefefe;
+      border-left: 3px solid #002855;
     }
 
     .faq-form {
       margin-top: 2em;
-      border-top: 1px solid #ccc;
-      padding-top: 1em;
+      border-top: 2px solid #ccc;
+      padding-top: 1.5em;
     }
 
-    input[type="text"], textarea {
+    textarea {
       width: 100%;
       padding: 0.5em;
-      margin-top: 0.5em;
-      margin-bottom: 1em;
-      border: 1px solid #ccc;
+      margin: 0.5em 0 1em 0;
       border-radius: 4px;
+      border: 1px solid #aaa;
     }
 
     button {
-      padding: 0.7em 1.2em;
       background-color: #002855;
       color: white;
+      padding: 0.7em 1.2em;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -62,10 +96,10 @@
   <header>
     <h1>Framers Linguistic Protocol</h1>
     <nav>
-      <a href="Index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Protocol.html">Protocol</a>
-      <a href="FAQ.html">FAQ</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="protocol.html">Protocol</a>
+      <a href="faq.html">FAQ</a>
     </nav>
   </header>
 
@@ -74,25 +108,25 @@
 
     <button class="accordion">What is the Framers Linguistic Protocol?</button>
     <div class="panel">
-      <p>FLP is a civic cryptographic initiative aimed at clarifying legal language and challenging coercive laws using decentralized tools.</p>
+      <p>The FLP is a civic cryptographic initiative that clarifies legal language and challenges coercive or vague laws using decentralized tools.</p>
     </div>
 
     <button class="accordion">How can I participate?</button>
     <div class="panel">
-      <p>You can contribute through our GitHub, join our discussions, and help propose or refine protocols.</p>
+      <p>Visit our GitHub repo, join our open discussions, or help draft and review protocol proposals.</p>
     </div>
 
-    <button class="accordion">Is this affiliated with a government?</button>
+    <button class="accordion">Is this project affiliated with any government?</button>
     <div class="panel">
-      <p>No. FLP is a civic-led, open-source movement not tied to any government body.</p>
+      <p>No. FLP is independent, open-source, and citizen-led.</p>
     </div>
 
     <div class="faq-form">
       <h3>Submit Your Question</h3>
       <form>
         <label for="question">Your Question</label>
-        <textarea id="question" name="question" rows="4" placeholder="Enter your question here..."></textarea>
-        <button type="submit" onclick="alert('Thanks for your question! We’ll review it soon.'); return false;">Submit</button>
+        <textarea id="question" name="question" rows="4" placeholder="Ask us anything..."></textarea>
+        <button type="submit" onclick="alert('Thanks! Your question has been recorded.'); return false;">Submit</button>
       </form>
     </div>
   </main>
