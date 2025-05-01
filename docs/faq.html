@@ -3,143 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FAQ - Framers Linguistic Protocol</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #111;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #002855;
-      color: #ffffff;
-      padding: 1em;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 1em;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 2em;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .accordion {
-      cursor: pointer;
-      padding: 1em;
-      width: 100%;
-      text-align: left;
-      border: none;
-      outline: none;
-      background-color: #ddd;
-      font-size: 1em;
-      font-weight: bold;
-      margin: 0.5em 0;
-      transition: background-color 0.3s;
-    }
-
-    .accordion:hover,
-    .active {
-      background-color: #bbb;
-    }
-
-    .panel {
-      padding: 0 1em;
-      display: none;
-      background-color: #fefefe;
-      border-left: 3px solid #002855;
-    }
-
-    .faq-form {
-      margin-top: 2em;
-      border-top: 2px solid #ccc;
-      padding-top: 1.5em;
-    }
-
-    textarea {
-      width: 100%;
-      padding: 0.5em;
-      margin: 0.5em 0 1em 0;
-      border-radius: 4px;
-      border: 1px solid #aaa;
-    }
-
-    button {
-      background-color: #002855;
-      color: white;
-      padding: 0.7em 1.2em;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0051a2;
-    }
-  </style>
+  <title>FAQ - FLP</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Framers Linguistic Protocol</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="protocol.html">Protocol</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="bg-[#1f1f1f] border-b border-[#bfa97a] sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-white">FLP</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-white hover:text-[#bfa97a]">Home</a>
+        <a href="about.html" class="text-white hover:text-[#bfa97a]">About</a>
+        <a href="faq.html" class="text-white hover:text-[#bfa97a]">FAQ</a>
+        <a href="protocol.html" class="text-white hover:text-[#bfa97a]">Protocol</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Frequently Asked Questions</h2>
-
-    <button class="accordion">What is the Framers Linguistic Protocol?</button>
-    <div class="panel">
-      <p>The FLP is a civic cryptographic initiative that clarifies legal language and challenges coercive or vague laws using decentralized tools.</p>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-[#bfa97a]">Frequently Asked Questions</h2>
+    <div class="space-y-8">
+      <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
+        <h3 class="text-xl font-semibold text-white">What is FLP?</h3>
+        <p class="text-white">The Framers Linguistic Protocol is an initiative to clarify and standardize legal language across states using cryptographic and citizen-centric tools.</p>
+      </div>
+      <div class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
+        <h3 class="text-xl font-semibold text-white">Who can contribute?</h3>
+        <p class="text-white">FLP is open-source and welcomes contributions from developers, legal scholars, and concerned citizens nationwide.</p>
+      </div>
     </div>
 
-    <button class="accordion">How can I participate?</button>
-    <div class="panel">
-      <p>Visit our GitHub repo, join our open discussions, or help draft and review protocol proposals.</p>
-    </div>
-
-    <button class="accordion">Is this project affiliated with any government?</button>
-    <div class="panel">
-      <p>No. FLP is independent, open-source, and citizen-led.</p>
-    </div>
-
-    <div class="faq-form">
-      <h3>Submit Your Question</h3>
-      <form>
-        <label for="question">Your Question</label>
-        <textarea id="question" name="question" rows="4" placeholder="Ask us anything..."></textarea>
-        <button type="submit" onclick="alert('Thanks! Your question has been recorded.'); return false;">Submit</button>
+    <div class="mt-12">
+      <h3 class="text-2xl font-bold text-[#bfa97a] mb-4">Have a Question?</h3>
+      <form class="bg-[#2a2a2a] p-6 rounded-xl shadow-md border border-[#bfa97a]">
+        <label for="question" class="block text-white mb-2">Your Question</label>
+        <textarea id="question" rows="4" class="w-full p-3 rounded-lg bg-gray-800 text-white border border-[#bfa97a]" placeholder="Type your question..."></textarea>
+        <button type="submit" class="mt-4 px-6 py-2 bg-[#bfa97a] text-black font-semibold rounded-lg hover:bg-[#a0885f]">Submit</button>
       </form>
     </div>
   </main>
 
-  <script>
-    const acc = document.getElementsByClassName("accordion");
-    for (let i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-        panel.style.display = panel.style.display === "block" ? "none" : "block";
-      });
-    }
-  </script>
+  <footer class="bg-[#1f1f1f] text-center py-4 border-t border-[#bfa97a] text-white">
+    <p>&copy; 2025 Framers Linguistic Protocol. All rights reserved.</p>
+  </footer>
 </body>
 </html>
