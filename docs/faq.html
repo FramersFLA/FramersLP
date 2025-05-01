@@ -1,37 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>FLP - FAQ</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - Framers Linguistic Protocol</title>
+  <link rel="stylesheet" href="Style.css" />
+  <style>
+    .accordion {
+      cursor: pointer;
+      padding: 1em;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: 0.3s;
+      background-color: #f1f1f1;
+      margin: 0.5em 0;
+    }
+
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      padding: 0 1em;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    .faq-form {
+      margin-top: 2em;
+      border-top: 1px solid #ccc;
+      padding-top: 1em;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 0.7em 1.2em;
+      background-color: #002855;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0051a2;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Framers Linguistic Protocol</h1>
-    <p class="tagline">Freedom through Clarity.</p>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="pictures.html">Gallery</a>
+      <a href="Index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Protocol.html">Protocol</a>
+      <a href="FAQ.html">FAQ</a>
     </nav>
   </header>
 
   <main>
     <h2>Frequently Asked Questions</h2>
 
-    <h3>What is the Framers Linguistic Protocol?</h3>
-    <p>FLP is a legal language reform project that reinterprets laws in plain, constitutional terms for public transparency.</p>
+    <button class="accordion">What is the Framers Linguistic Protocol?</button>
+    <div class="panel">
+      <p>FLP is a civic cryptographic initiative aimed at clarifying legal language and challenging coercive laws using decentralized tools.</p>
+    </div>
 
-    <h3>Is this protocol open source?</h3>
-    <p>Yes. All documentation and software are licensed under the GPL 3.0 for free use and contribution.</p>
+    <button class="accordion">How can I participate?</button>
+    <div class="panel">
+      <p>You can contribute through our GitHub, join our discussions, and help propose or refine protocols.</p>
+    </div>
 
-    <h3>Why focus on linguistic clarity?</h3>
-    <p>Vague and manipulative legal language is often used to confuse citizens. Our goal is to dismantle that barrier.</p>
+    <button class="accordion">Is this affiliated with a government?</button>
+    <div class="panel">
+      <p>No. FLP is a civic-led, open-source movement not tied to any government body.</p>
+    </div>
 
-    <h3>How will this affect state law?</h3>
-    <p>We aim to encourage legal conformity across states by exposing contradictory or unconstitutional interpretations.</p>
-
-    <h3>Is this a political movement?</h3>
-    <p>No. It is a constitutional transparency and civil clarity initiative.</p>
+    <div class="faq-form">
+      <h3>Submit Your Question</h3>
+      <form>
+        <label for="question">Your Question</label>
+        <textarea id="question" name="question" rows="4" placeholder="Enter your question here..."></textarea>
+        <button type="submit" onclick="alert('Thanks for your question! We’ll review it soon.'); return false;">Submit</button>
+      </form>
+    </div>
   </main>
+
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    }
+  </script>
 </body>
 </html>
