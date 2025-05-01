@@ -2,22 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Protocol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLP | Protocol</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1a1a1a;
+      color: #f5f5dc;
+    }
+
+    header {
+      background-color: #121212;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav a {
+      color: #f5f5dc;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #e0d6b9;
+    }
+
+    h2 {
+      color: #d6c7a1;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #121212;
+      color: #f5f5dc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Framers Linguistic Protocol</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="protocol.html">Protocol</a>
-    </nav>
-  </header>
-  <main>
-    <h2>The Protocol</h2>
-    <p>FLP leverages blockchain tools like Ocean Protocol to tokenize legal data, create smart governance templates, and identify inconsistencies across jurisdictions. It is open-source, community-led, and committed to building tools that keep legal interpretation honest and transparent.</p>
-  </main>
-</body>
-</html>
+      <a href="about.html">About</a
