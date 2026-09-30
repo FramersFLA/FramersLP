@@ -1,9 +1,3 @@
-# Framers Linguistic Protocol (FLP)
+# FLP publishing directory
 
-Framers Linguistic Protocol is a cryptographic legal framework designed to standardize and clarify law through open-source protocols. This project aims to give power back to the people by enabling transparency, fairness, and precision in legal interpretation using decentralized technologies.
-
-## Mission
-"Freedom through clarity."
-
-## License
-This project is licensed under the GPL-3.0 License.
+This directory is the GitHub Pages publishing source. See the repository root README for editing, validation, deployment, email-form behavior, and the white paper draft status.
