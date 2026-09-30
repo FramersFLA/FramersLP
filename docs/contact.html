@@ -1,118 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Framers Linguistic Protocol | Contact</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1a1a1a;
-      color: #f5f5dc;
-    }
-
-    header {
-      background-color: #121212;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    nav a {
-      color: #f5f5dc;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-    }
-
-    nav a:hover {
-      background-color: #444;
-      border-radius: 5px;
-    }
-
-    .container {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      color: #e0d6b9;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea {
-      background-color: #2a2a2a;
-      color: #f5f5dc;
-      border: 1px solid #555;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-    }
-
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #e0d6b9;
-    }
-
-    button {
-      background-color: #e0d6b9;
-      color: #121212;
-      padding: 0.75rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background-color: #d4c8a2;
-    }
-
-    footer {
-      background-color: #121212;
-      color: #f5f5dc;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h1>Contact Us</h1>
-    <p>Have questions, feedback, or want to get involved? Reach out below:</p>
-
-    <form action="mailto:foundersfla@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="subject" placeholder="Subject" />
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-
-  <footer>
-    &copy; 2025 Framers Linguistic Protocol. All rights reserved
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Framers Linguistic Protocol</title>
+<meta name="description" content="Send questions and feedback to Framers Linguistic Protocol using your email app.">
+<meta name="theme-color" content="#111b25">
+<link rel="stylesheet" href="style.css"><script src="site.js" defer></script>
+</head><body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="nav-wrap">
+<a class="brand" href="index.html" aria-label="FLP home"><span class="brand-mark">FLP</span><span>FRAMERS LINGUISTIC<br>PROTOCOL</span></a>
+<nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a href="protocol.html">Protocol</a></li></ul></nav>
+</div></header><main id="main" tabindex="-1"><section class="page-intro"><p class="eyebrow">CONTACT &amp; CONTRIBUTE</p><h1>Join the conversation.</h1><p class="lede">Questions, feedback, or an idea for clearer law? Start here.</p></section><section class="prose"><h2>Write to FLP</h2><form class="email-form" data-email-form><label for="name">Your name</label><input id="name" name="name" autocomplete="name" maxlength="100" required><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required><label for="subject">Subject</label><input id="subject" name="subject" value="FLP inquiry" maxlength="120" required><label for="message">Your message</label><textarea id="message" name="message" rows="6" maxlength="1500" required></textarea><p id="email-help" class="muted">This opens a draft in your email app. Review and send it there. This site does not send or store your message.</p><button class="button" type="submit" aria-describedby="email-help" disabled>Open email draft ↗</button><p data-form-status role="status"></p><noscript><p>Enable JavaScript to prepare a draft, or email us directly using the address below.</p></noscript></form><p>You can also email <a href="mailto:foundersfla@gmail.com">foundersfla@gmail.com</a>.</p><h2>Contribute in the open</h2><p>Review the code and propose improvements on <a href="https://github.com/FramersFLA/FramersLP">GitHub</a>.</p></section></main><footer class="site-footer"><div><a class="footer-brand" href="index.html">Framers Linguistic Protocol</a><p>Freedom through clarity.</p></div><div><a href="protocol.html">Explore the protocol</a><a href="https://github.com/FramersFLA/FramersLP">Contribute on GitHub</a><a href="LICENSE">GPL-3.0 license</a></div></footer></body></html>
